@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "@magicleap/prismatic@0.19.0",
+      "/Users/fred/git/ML/ARInovationDay-zhouyuhang"
+    ]
+  ],
+  "_from": "@magicleap/prismatic@0.19.0",
+  "_id": "@magicleap/prismatic@0.19.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6isqMiKtQ5aExivk1jsnznogzinF0l+untaWA0oBC4PsuuZSIBCV0YWcpYUHddgl08x35qK8ia6HJyPBsDOXdQ==",
+  "_location": "/@magicleap/prismatic",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@magicleap/prismatic@0.19.0",
+    "name": "@magicleap/prismatic",
+    "escapedName": "@magicleap%2fprismatic",
+    "scope": "@magicleap",
+    "rawSpec": "0.19.0",
+    "saveSpec": null,
+    "fetchSpec": "0.19.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@magicleap/prismatic/-/prismatic-0.19.0.tgz",
+  "_spec": "0.19.0",
+  "_where": "/Users/fred/git/ML/ARInovationDay-zhouyuhang",
+  "author": {
+    "name": "Magic Leap, Inc."
+  },
+  "browser": "prismatic.min.js",
+  "description": "A declarative JS library for creating 3D content for Magic Leap's Helio browser",
+  "files": [
+    "prismatic.min.js"
+  ],
+  "keywords": [
+    "Magic Leap",
+    "Helio",
+    "Helio Browser",
+    "Prismatic",
+    "Lumin Runtime",
+    "3D",
+    "Browser Development",
+    "3D Browser Development",
+    "Mixed Reality Web",
+    "Spatial Computing",
+    "VR",
+    "MR",
+    "AR",
+    "XR",
+    "Declarative Models",
+    "Declarative 3d Web",
+    "Shaggles"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "prismatic.min.js",
+  "name": "@magicleap/prismatic",
+  "unpkg": "prismatic.min.js",
+  "version": "0.19.0"
+}
