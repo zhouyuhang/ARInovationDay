@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="transparent-background">
+  <title>Getting started with Prismatic</title>
+  <style>
+    body { background-color: rgba(0, 0, 0, 0); }
+    .text-white { color: white}
+  </style>
+  <script src="prismatic/prismatic.min.js"></script>
+</head>
+<body>
+  <h1 class="text-white">Product Detail Page</h1>
+  <img width="500px" src="res/Images/payment.png"/>
+
+  <ml-model
+    src="res/earth.fbx"
+    style="position: absolute; left: 70%; top: 50%; transform: translate(-50%, -50%);"
+    z-offset="-500px"
+    unbounded="true"
+    model-scale="1 1 1"
+    rotate-by-angles="
+          angles: 0 20 0;
+          duration: 30s;
+          track: 1;"
+    >
+  </ml-model>
+
+  <ml-quad
+  src="res/Images/texture2.jpg"
+  style="width: 2000px; height: 2000px; position: absolute; left: 70%; top: 50%;transform: translate(-50%, -50%);"
+  z-offset="-1200px">
+  </ml-quad>
+
+</body>
+</html>

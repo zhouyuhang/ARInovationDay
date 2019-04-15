@@ -1,12 +1,105 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="transparent-background">
   <title>Getting started with Prismatic</title>
+  <style>
+    body { background-color: rgba(0, 0, 0, 0); }
+    .text-white { color: white}
+    .item { margin: 30px; padding: 30px; border: 5px solid #7952b3;}
+    .container { display: flex; flex-wrap: wrap; }
+    .btn {
+      color: white;
+      max-height: 60px;
+      border: 3px solid;
+      border-color: white;
+      text-align: center;
+      vertical-align: middle;
+      padding: .8rem 2rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin: 10px;
+    }
+    .btn:hover{
+      color: #fff;
+      background-color: #7952b3;
+      border-color: #7952b3;
+    }
+    .button-list{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      margin-top: 100px;
+    }
+    .info{position: relative;
+    left: 400px; }
+  </style>
   <script src="prismatic/prismatic.min.js"></script>
 </head>
 <body>
-  <h1>Welcome to AR world!</h1>
-  <ml-model src="balloon.fbx" style="width: 300px; height: 300px"></ml-model>
+  <h1 class="text-white">Welcome to Shop with AR!</h1>
+  <div class="button-list">
+    <a id="button-1" class="btn" target="_blank">Balloon</a>
+    <a id="button-2" class="btn" target="_blank">Earth</a>
+    <a id="button-3" class="btn" target="_blank">Orange</a>
+  </div>
+
+  <ml-model
+    id="Balloon"
+    trigger="button-1"
+    src="res/balloon.fbx"
+    style="width: 400px; height: 400px; position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%);"
+    z-offset="-800px"
+    extractable="true"
+    extracted-size="1 1 1"
+    rotate-by-angles="
+          angles: 5 -5 0;
+          duration: 30s;
+          track: 1;">
+          <div class="info">
+            <h2 class="text-white">A balloon is a flexible bag that can be inflated with a gas.</h2>
+            <h2 class="text-white">Price: $500 </h2>
+            <a class="btn" target="_blank" href="product1.html">Buy Now</a>
+          </div>
+  </ml-model>
+
+  <ml-model
+    id="earth"
+    visibility="hidden"
+    trigger="button-2"
+    src="res/earth.fbx"
+    style="width: 400px; height: 400px; position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%);"
+    z-offset="-800px"
+    extractable="true"
+    extracted-size="1 1 1"
+    rotate-by-angles="
+          angles: 5 -5 0;
+          duration: 30s;
+          track: 1;">
+          <div class="info">
+            <h2 class="text-white">Earth is the third planet from the Sun and the only astronomical object known to harbor life.</h2>
+            <h2 class="text-white">Price: $99999 </h2>
+            <a class="btn" target="_blank" href="product2.html">Buy Now</a>
+          </div>
+  </ml-model>
+
+  <ml-quad
+  trigger="button-3"
+  visibility="hidden"
+  src="res/Images/orange.png"
+  z-offset="-800px"
+  extractable="true"
+  extracted-size="1 1 1"
+  rotate-by-angles="
+        angles: 5 -5 0;
+        duration: 30s;
+        track: 1;"
+  style="width: 300px; height: 300px; position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%);">
+    <div class="info">
+      <h2 class="text-white">The fruit of the tree species Citrus sinensis.</h2>
+      <h2 class="text-white">Price: $3 </h2>
+      <a class="btn" target="_blank" href="product3.html">Buy Now</a>
+    </div>
+  </ml-quad>
+
 </body>
 </html>
