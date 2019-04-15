@@ -13,7 +13,7 @@ To start the server:
 1. Download and unpack
 2. Run `npm install`
 3. Start the development server for project with `npm start`
-4. Point your browser to [http://localhost:400](http://localhost:400)
+4. Point your browser to [http://localhost:4000](http://localhost:4000)
 
 resources
 ---------
