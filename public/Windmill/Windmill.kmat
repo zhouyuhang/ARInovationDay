@@ -1,0 +1,26 @@
+{
+  "global": {
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "opaque": true,
+    "shaderName": "UnlitTextured"
+  },
+  "materials": [{
+    "albedo": "Windmill/Windmill_V01_Diffuse.png",
+    "blendmode": "opaque",
+    "color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "emissive": "Windmill/Windmill_V01_Ambient.png",
+    "name": "Windmill_Mat1",
+    "normal": "Windmill/Windmill_Normal.png",
+    "shaderName": "DiffuseNormalSpecular"
+  }]
+}

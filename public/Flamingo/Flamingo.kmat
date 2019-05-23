@@ -1,0 +1,26 @@
+{
+  "global": {
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "opaque": true,
+    "shaderName": "UnlitTextured"
+  },
+  "materials": [{
+    "albedo": "Flamingo/Flamingo_Albedo_1.png",
+    "ambience": 0.2,
+    "color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "name": "Flamingo_Mat1",
+    "shaderName": "DiffuseNormalSpecular",
+    "shininess": 0.057,
+    "specular": "Flamingo/Flamingo_Specular_1.png"
+  }]
+}

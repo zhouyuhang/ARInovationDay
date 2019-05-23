@@ -1,0 +1,37 @@
+{
+  "global": {
+    "color": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "opaque": true,
+    "shaderName": "UnlitTextured"
+  },
+  "materials": [{
+      "albedo": "Helmet/Helmet_Diffuse1.png",
+      "blendmode": "opaque",
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "Helmet_Mat",
+      "shaderName": "DiffuseNormalSpecular"
+    },
+    {
+      "albedo": "Helmet/Visor_Diffuse1.png",
+      "blendmode": "opaque",
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "Helmet_Glass",
+      "shaderName": "DiffuseNormalSpecular"
+    }
+  ]
+}
